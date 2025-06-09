@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Yaqeen – Helping Dealerships Achieve their Goals in 90 Days</title>
+    <style>
+        /* ===========================
+           GLOBAL STYLES & BACKGROUND
+         =========================== */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #1a1a1a;
+            background-image: url("data:image/svg+xml;base64,CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCI+CiAgPGNpcmNsZSBjeD0iNTAiIGN5PSI1MCIgcj0iMzAiIHN0cm9rZT0iIzgwODA4MCIgc3Ryb2tlLXdpZHRoPSI0IiBmaWxsPSJub25lIiBvcGFjaXR5PSIwLjEiLz4KICA8cGF0aCBkPSJNNTAsMjAgTDUwLDAgTTUwLDEwMCBMNTAsODAgTTIwLDUwIEwwLDUwIE0xMDAsNTAgTDgwLDUwIE0zMCwzMCBMMTUsMTUgTTg1LDg1IEw3MCw3MCBNMzAsNzAgTDE1LDg1IE03MCwxNSBMODUsMzAiCiAgICAgICAgc3Ryb2tlPSIjODA4MDgwIiBzdHJva2Utd2lkdGg9IjQiIG9wYWNpdHk9IjAuMSIvPgo8L3N2Zz4K");
+            background-repeat: repeat;
+            background-size: 100px 100px;
+            color: #f0f0f0;
+        }
+        a {
+            text-decoration: none;
+        }
+        /* ===========================
+           HEADER & LOGO
+         =========================== */
+        header {
+            background-color: rgba(0, 0, 0, 0.8);
+            color: #ffffff;
+            text-align: center;
+            padding: 20px 0;
+        }
+        .logo {
+            max-width: 150px;
+            height: auto;
+        }
+        /* ===========================
+           CONTAINER (CENTRAL COLUMN)
+         =========================== */
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        /* ===========================
+           HERO SECTION
+         =========================== */
+        .hero {
+            background-color: #ffffff;
+            color: #1a1a1a;
+            padding: 60px 20px;
+            text-align: center;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+            margin-top: -40px; /* overlaps header */
+            position: relative;
+            z-index: 1;
+        }
+        .hero h1 {
+            font-size: 2.5em;
+            line-height: 1.2;
+            margin-bottom: 20px;
+        }
+        .hero p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+        }
+        .hero p em {
+            font-style: italic;
+        }
+        .btn {
+            display: inline-block;
+            background-color: #c5a15a;
+            color: #ffffff;
+            padding: 15px 30px;
+            font-size: 1em;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+        .btn:hover {
+            background-color: #b08f50;
+        }
+        /* ===========================
+           FEATURES GRID
+         =========================== */
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 60px;
+        }
+        .feature {
+            flex: 1 1 300px;
+            background-color: rgba(255, 255, 255, 0.9);
+            color: #1a1a1a;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        .feature h3 {
+            margin-top: 0;
+            color: #0a1f44;
+        }
+        /* ===========================
+           ABOUT SECTION
+         =========================== */
+        .about {
+            background-color: rgba(255, 255, 255, 0.9);
+            color: #1a1a1a;
+            margin-top: 60px;
+            padding: 40px 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        .about h2 {
+            margin-top: 0;
+            color: #0a1f44;
+        }
+        .about p {
+            line-height: 1.6;
+        }
+        .about p em {
+            font-style: italic;
+        }
+        /* ===========================
+           FOOTER
+         =========================== */
+        footer {
+            background-color: rgba(0, 0, 0, 0.8);
+            color: #ffffff;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 60px;
+        }
+        /* ===========================
+           RESPONSIVE BREAKPOINTS
+         =========================== */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2em;
+            }
+            .hero p {
+                font-size: 1.1em;
+            }
+            .features {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ===========================
+       HEADER with Embedded Logo
+     =========================== -->
+    <header>
+        <img src="yaqeenlogo" alt="Yaqeen Sales Logo" class="logo" />
+    </header>
+
+    <!-- ===========================
+       MAIN CONTENT CONTAINER
+     =========================== -->
+    <div class="container">
+
+        <!-- ===========================
+           HERO SECTION (Promise Highlight)
+         =========================== -->
+        <section class="hero">
+            <h1>
+                I help Auto Repair Shops get 50 High-Margin Jobs<br/>
+                within 90 days—or your full investment refunded—<br/>
+                and we’ll keep working free until you do!
+            </h1>
+            <p>Unlock consistent, high-value customers with our Proven <em>Revenue TurboCharge Engine</em>.</p>
+            <a href="https://calendly.com/uwaismohammed063" class="btn" target="_blank">
+                Schedule Your 15-Minute Consultation
+            </a>
+        </section>
+
+        <!-- ===========================
+           FEATURES GRID (Updated with 3 sections)
+         =========================== -->
+        <section class="features">
+            <div class="feature">
+                <h3>Market Expertise</h3>
+                <p>
+                    Analysing the market for your business to uncover the leveraging techniques that
+                    ensure you fast-track your progress to maximising bay utilization, raising average
+                    repair orders, and ensuring consistent revenue increases.
+                </p>
+            </div>
+            <div class="feature">
+                <h3>Revenue TurboCharge Engine</h3>
+                <p>
+                    Leave the competition in the dust with our proven <em>Revenue TurboCharge Engine</em>,
+                    driving organic leads straight into your bay doors.
+                </p>
+            </div>
+            <div class="feature">
+                <h3>Reputation Management</h3>
+                <p>
+                    Boost five-star reviews, monitor customer feedback, and harness word-of-mouth so your
+                    shop becomes the “go-to” name in town.
+                </p>
+            </div>
+        </section>
+
+        <!-- ===========================
+           ABOUT SECTION (Updated Text)
+         =========================== -->
+        <section class="about">
+            <h2>Why Yaqeen Sales?</h2>
+            <p>
+                Hey there—I’m a former Data Analyst and I want to bring my years of experience managing
+                numbers for countless businesses to help yours achieve its goals. My team and I have discovered
+                the exact marketing “tune-up” that consistently filled bays with high-margin jobs. Now, all of
+                that know-how is packaged into our <em>Revenue TurboCharge Engine</em> so you don’t waste time
+                or money on guesswork. No fancy jargon—just a system that works, backed by my guarantee: 50
+                high-margin jobs in 90 days or your money back, and free service until we hit it.
+            </p>
+        </section>
+
+    </div> <!-- end .container -->
+
+    <!-- ===========================
+       FOOTER
+     =========================== -->
+    <footer>
+        <p>© 2025 Yaqeen Sales. Serving Auto Repair Shops across the U.S.</p>
+    </footer>
+
+</body>
+</html>
